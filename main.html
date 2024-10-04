@@ -1,16 +1,163 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Gallery</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            border-radius: 15px;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+            cursor: pointer;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Cards Gallery</h2>
+    <div class="row">
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Image1.jpg" alt="Image 1" data-toggle="modal" data-target="#lightbox1">
+                <div class="card-body">
+                    <h6 class="text-center">Description 1</h6>
+                    <p class="text-center">Details about image 1.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Image2.jpg" alt="Image 2" data-toggle="modal" data-target="#lightbox2">
+                <div class="card-body">
+                    <h6 class="text-center">Description 2</h6>
+                    <p class="text-center">Details about image 2.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Image3.jpg" alt="Image 3" data-toggle="modal" data-target="#lightbox3">
+                <div class="card-body">
+                    <h6 class="text-center">Description 3</h6>
+                    <p class="text-center">Details about image 3.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more cards as needed (Card 4, 5, 6, etc.) -->
+
+    </div>
+</div>
+
+<!-- Lightbox Modals -->
+<div class="modal fade" id="lightbox1" tabindex="-1" role="dialog" aria-labelledby="lightboxLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg" class="img-fluid" alt="Image 1">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="lightbox2" tabindex="-1" role="dialog" aria-labelledby="lightboxLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg" class="img-fluid" alt="Image 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="lightbox3" tabindex="-1" role="dialog" aria-labelledby="lightboxLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg" class="img-fluid" alt="Image 3">
+            </div>
+        </div>
+    </div>
+</div>
+	<div class="modal fade" id="lightbox1" tabindex="-1" role="dialog" aria-labelledby="lightboxLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg" class="img-fluid" alt="Image 1">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="lightbox2" tabindex="-1" role="dialog" aria-labelledby="lightboxLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg" class="img-fluid" alt="Image 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="lightbox3" tabindex="-1" role="dialog" aria-labelledby="lightboxLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg" class="img-fluid" alt="Image 3">
+            </div>
+        </div>
+    </div>
+</div>
+	<div class="modal fade" id="lightbox1" tabindex="-1" role="dialog" aria-labelledby="lightboxLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image7.jpg" class="img-fluid" alt="Image 1">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="lightbox2" tabindex="-1" role="dialog" aria-labelledby="lightboxLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image8.jpg" class="img-fluid" alt="Image 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="lightbox3" tabindex="-1" role="dialog" aria-labelledby="lightboxLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image9.jpg" class="img-fluid" alt="Image 3">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add more lightbox modals as needed (Lightbox 4, 5, 6, etc.) -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
